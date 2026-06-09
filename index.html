@@ -132,7 +132,8 @@ const GUILD_ID = "1513673840293707816";
 const PERMISSIONS = "8";
 // ═══════════════════════════════════════════════════
 
-const AUTH_URL = `https://discord.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=bot%20applications.commands&permissions=${PERMISSIONS}&guild_id=${GUILD_ID}&disable_guild_select=true`;
+// New AUTH_URL - allows any user to connect their Discord account
+const AUTH_URL = `https://discord.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=identify&response_type=code&redirect_uri=https://unequaled007.github.io/Snake-Game-/`;
 
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
